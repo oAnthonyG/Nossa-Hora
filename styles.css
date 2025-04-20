@@ -10,6 +10,7 @@
 }
 
 body {
+  position: relative;
   font-family: 'Inter', sans-serif;
   padding: 1.2rem;
   background-color: var(--background-color);
@@ -67,4 +68,27 @@ img {
 
 .ps{
   font-size: 11px;
+}
+
+
+
+
+.heart {
+  position: absolute;
+  color: purple;
+  top: -30px;
+  font-size: 24px;
+  z-index: 9999;
+  animation: fall linear infinite;
+}
+
+@keyframes fall {
+  0% {
+    transform: translateY(-50px) rotate(0deg);
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(100vh) rotate(360deg);
+    opacity: 0;
+  }
 }

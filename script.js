@@ -56,3 +56,26 @@ function updateTimer() {
 
 updateTimer();
 setInterval(updateTimer, 1000);
+
+
+
+function createHeart() {
+  const heart = document.createElement("div");
+  heart.classList.add("heart");
+  heart.innerText = "💜";
+
+  // Posição horizontal aleatória
+  heart.style.left = Math.random() * 100 + "vw";
+  heart.style.fontSize = Math.random() * 20 + 20 + "px"; // Tamanhos variados
+  heart.style.animationDuration = Math.random() * 3 + 2 + "s"; // Velocidade diferente
+
+  document.body.appendChild(heart);
+
+  // Remover o coração depois da animação
+  setTimeout(() => {
+    heart.remove();
+  }, 5000);
+}
+
+// Criar corações continuamente
+setInterval(createHeart, 300);
