@@ -1,14 +1,16 @@
 const imgs = document.getElementById("img");
 const img = document.querySelectorAll("#img img");
 const startDate = new Date(Date.UTC(2021, 10, 5, 0, 0, 0));
-const botao = document.getElementById("but");
+const botao = document.getElementById("revelarBtn");
+const divbotao = document.getElementById("but");
 const conteudo = document.getElementById("conteudo");
 
-botao.onclick = function() {
+botao.onclick = function () {
   // Revela o conteúdo
   conteudo.style.display = "block";
   // Esconde o botão
   botao.style.display = "none";
+  divbotao.style.display = "none";
 }
 
 
