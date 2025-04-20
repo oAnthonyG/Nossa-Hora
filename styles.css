@@ -93,3 +93,31 @@ img {
     opacity: 0;
   }
 }
+
+
+@media (min-width: 600px){
+  header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  iframe {
+    height: 120px;
+  }
+
+  .wrapper{
+    width: 100%;
+    max-width: 1000px;
+  }
+  iframe{
+    width: 100%;
+  }
+
+
+  h1, #timer{
+    text-align: center;
+  }
+}
+
+
+
