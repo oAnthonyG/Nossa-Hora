@@ -65,9 +65,9 @@ function createHeart() {
   heart.innerText = "💜";
 
   // Posição horizontal aleatória
-  heart.style.left = Math.random() * 100 + "vw";
+  heart.style.left = Math.random() * 90 + "%";
   heart.style.fontSize = Math.random() * 20 + 20 + "px"; // Tamanhos variados
-  heart.style.animationDuration = Math.random() * 3 + 2 + "s"; // Velocidade diferente
+  heart.style.animationDuration = Math.random() * 6 + 3 + "s"; // Velocidade diferente
 
   document.body.appendChild(heart);
 
