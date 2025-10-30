@@ -1,6 +1,6 @@
 const imgs = document.getElementById("img");
 const img = document.querySelectorAll("#img img");
-const startDate = new Date(Date.UTC(2021, 10, 5, 0, 0, 0));
+const startDate = new Date(Date.UTC(2021, 9, 5, 0, 0, 0));
 const botao = document.getElementById("revelarBtn");
 const divbotao = document.getElementById("but");
 const conteudo = document.getElementById("conteudo");
@@ -28,8 +28,7 @@ setInterval(carousel, 1800);
 
 
 function updateTimer() {
-  const now = new Date();
-  const nowUTC = new Date(now.getTime() + now.getTimezoneOffset() * 60000); // Corrige para UTC
+  const nowUTC = new Date();
 
   let years = nowUTC.getUTCFullYear() - startDate.getUTCFullYear();
   let months = nowUTC.getUTCMonth() - startDate.getUTCMonth();
