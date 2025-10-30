@@ -6,9 +6,9 @@ const divbotao = document.getElementById("but");
 const conteudo = document.getElementById("conteudo");
 
 botao.onclick = function () {
-  // Revela o conteúdo
+  
   conteudo.style.display = "block";
-  // Esconde o botão
+  
   botao.style.display = "none";
   divbotao.style.display = "none";
 }
@@ -38,7 +38,7 @@ function updateTimer() {
   let minutes = nowUTC.getUTCMinutes() - startDate.getUTCMinutes();
   let seconds = nowUTC.getUTCSeconds() - startDate.getUTCSeconds();
 
-  // Ajustes quando valores são negativos
+  
   if (seconds < 0) {
     seconds += 60;
     minutes--;
@@ -76,18 +76,18 @@ function createHeart() {
   heart.classList.add("heart");
   heart.innerText = "💜";
 
-  // Posição horizontal aleatória
+  
   heart.style.left = Math.random() * 90 + "%";
-  heart.style.fontSize = Math.random() * 20 + 20 + "px"; // Tamanhos variados
-  heart.style.animationDuration = Math.random() * 6 + 3 + "s"; // Velocidade diferente
+  heart.style.fontSize = Math.random() * 20 + 20 + "px"; 
+  heart.style.animationDuration = Math.random() * 6 + 3 + "s"; 
 
   document.body.appendChild(heart);
 
-  // Remover o coração depois da animação
+  
   setTimeout(() => {
     heart.remove();
   }, 5000);
 }
 
-// Criar corações continuamente
+
 setInterval(createHeart, 300);
